@@ -1,0 +1,28 @@
+@model CRUDDatabase.Models.Student
+@{
+    ViewBag.Title = "Show";
+}
+
+<a href="/StudentPage/List">Back To Students</a>
+
+<div>
+    <h2>Student Information</h2>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <td>@Model.StudentId</td>
+        </tr>
+        <tr>
+            <th>Full Name</th>
+            <td>@Model.StudentFname @Model.StudentLname</td>
+        </tr>
+        <tr>
+            <th>Student Number</th>
+            <td>@Model.StudentNumber</td>
+        </tr>
+        <tr>
+            <th>Enroll Date</th>
+            <td>@Model.EnrolDate.ToString("dd-MM-yyyy")</td>
+        </tr>
+    </table>
+</div>

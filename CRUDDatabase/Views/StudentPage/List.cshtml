@@ -1,0 +1,29 @@
+@model IEnumerable<CRUDDatabase.Models.Student>
+@{
+    ViewBag.Title = "List";
+}
+
+<div>
+<h2>List of Students</h2>
+<br>
+<!-- Student Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in Model)
+            {
+                <tr>
+                    <td>@teacher.StudentId</td>
+                    <td>@teacher.StudentFname @teacher.StudentLname</td>
+                    <td><a href="/StudentPage/Show/@teacher.StudentId">Show Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

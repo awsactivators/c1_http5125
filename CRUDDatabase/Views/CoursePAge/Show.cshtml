@@ -1,0 +1,36 @@
+@model CRUDDatabase.Models.Course
+@{
+    ViewBag.Title = "Show";
+}
+
+<a href="/CoursePage/List">Back To Courses</a>
+
+<div>
+    <h2>Course Information</h2>
+    <table class="table">
+        <tr>
+            <th>Course ID</th>
+            <td>@Model.CourseId</td>
+        </tr>
+        <tr>
+            <th>Course Code</th>
+            <td>@Model.CourseCode</td>
+        </tr>
+        <tr>
+            <th>Course Name</th>
+            <td>@Model.CourseName</td>
+        </tr>
+        <tr>
+            <th>Start Date</th>
+            <td>@Model.StartDate.ToString("dd-MM-yyyy")</td>
+        </tr>
+        <tr>
+            <th>Finish Date</th>
+            <td>@Model.FinishDate.ToString("dd-MM-yyyy")</td>
+        </tr>
+        <tr>
+            <th>Teacher ID</th>
+            <td><a href="/TeacherPage/Show/@Model.TeacherId">@Model.TeacherId</a</td>
+        </tr>
+    </table>
+</div>

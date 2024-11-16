@@ -1,0 +1,31 @@
+@model IEnumerable<CRUDDatabase.Models.Course>
+@{
+    ViewBag.Title = "List";
+}
+
+<div>
+<h2>All Courses</h2>
+<br>
+    <!-- Course Table -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+                @foreach (var _class in Model)
+                {
+                    <tr>
+                        <td>@_class.CourseId</td>
+                        <td>@_class.CourseCode</td>
+                        <td>@_class.CourseName</td>
+                        <td><a href="/CoursePage/Show/@_class.CourseId">Show Details</a></td>
+                    </tr>
+                }
+            </tbody>
+    </table>
+</div>

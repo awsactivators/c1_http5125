@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUDDatabase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+290d5f8ead5f3cec86456c05366f32484f37f58d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5fc9e26b93b79d3ed4951fd4b2c85bd3ec50191")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUDDatabase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUDDatabase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
